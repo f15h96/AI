@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a7c8ca992f915438a96c2077353778, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  brickName: Assets/Behaviours/Test.asset
+  xml: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<BehaviorBricks xmlns:ref=\"urn:padaone\"
+    version=\"1.0\">\r\n  <BehaviorTree id=\"0\" />\r\n  <runtimeInfo>\r\n    <BehaviorTree
+    id=\"0\" guid=\"f921e38e95acaec45939457d628ac5a7\" nextId=\"26\">\r\n      <root>\r\n       
+    <ActionNode id=\"2\" />\r\n      </root>\r\n      <inputParams>\r\n        <inputValues>\r\n         
+    <entry name=\"Tokens\" type=\"System.Int32\" isBlackboard=\"False\" value=\"0\"
+    />\r\n          <entry name=\"LSpawn\" type=\"UnityEngine.GameObject\" isBlackboard=\"False\"
+    />\r\n          <entry name=\"MSpawn\" type=\"UnityEngine.GameObject\" isBlackboard=\"False\"
+    />\r\n          <entry name=\"SSpawn\" type=\"UnityEngine.GameObject\" isBlackboard=\"False\"
+    />\r\n          <entry name=\"EnemyL\" type=\"UnityEngine.GameObject\" isBlackboard=\"False\"
+    />\r\n          <entry name=\"EnemyM\" type=\"UnityEngine.GameObject\" isBlackboard=\"False\"
+    />\r\n          <entry name=\"EnemyS\" type=\"UnityEngine.GameObject\" isBlackboard=\"False\"
+    />\r\n        </inputValues>\r\n      </inputParams>\r\n      <outputParams>\r\n       
+    <outputValues>\r\n          <entry name=\"TowerType\" type=\"System.String\"
+    isBlackboard=\"True\" />\r\n          <entry name=\"MainTT\" type=\"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]\"
+    isBlackboard=\"True\" />\r\n          <entry name=\"Formation\" type=\"System.String\"
+    isBlackboard=\"True\" />\r\n          <entry name=\"LargeEnemies\" type=\"System.Int32\"
+    isBlackboard=\"True\" />\r\n          <entry name=\"MedEnemies\" type=\"System.Int32\"
+    isBlackboard=\"True\" />\r\n          <entry name=\"SmallEnemies\" type=\"System.Int32\"
+    isBlackboard=\"True\" />\r\n          <entry name=\"var\" type=\"System.Single\"
+    isBlackboard=\"True\" />\r\n        </outputValues>\r\n      </outputParams>\r\n     
+    <localParams />\r\n    </BehaviorTree>\r\n    <ActionNode id=\"2\" action=\"PrintMessage\">\r\n     
+    <inputParams>\r\n        <inputValues>\r\n          <entry name=\"Text\" type=\"System.String\"
+    isBlackboard=\"False\" value=\"Done\" />\r\n        </inputValues>\r\n      </inputParams>\r\n     
+    <outputParams />\r\n      <localParams />\r\n    </ActionNode>\r\n  </runtimeInfo>\r\n 
+    <editorInfo>\r\n    <BehaviorTree id=\"0\" _name=\"Test\" _description=\"\" _removeIfClosed=\"False\">\r\n     
+    <_rootList>\r\n        <elem>\r\n          <ActionNode id=\"12\" />\r\n       
+    </elem>\r\n        <elem>\r\n          <ActionNode id=\"14\" />\r\n        </elem>\r\n       
+    <elem>\r\n          <ActionNode id=\"16\" />\r\n        </elem>\r\n        <elem>\r\n         
+    <RepeatDecorator id=\"24\" />\r\n        </elem>\r\n        <elem>\r\n         
+    <SequenceNode id=\"25\" />\r\n        </elem>\r\n      </_rootList>\r\n     
+    <_nodes>\r\n        <nodes>\r\n          <RepeatDecorator id=\"24\" />\r\n         
+    <ActionNode id=\"12\" />\r\n          <ActionNode id=\"14\" />\r\n          <ActionNode
+    id=\"16\" />\r\n          <SequenceNode id=\"25\" />\r\n        </nodes>\r\n     
+    </_nodes>\r\n    </BehaviorTree>\r\n    <ActionNode id=\"2\">\r\n      <_data>\r\n       
+    <data breakpoint=\"0\" selected=\"False\" position=\"368 391\" name=\"PrintMessage\"
+    description=\"Prints a message (param Text) on the standard output.\" cardinality=\"0\"
+    hasParent=\"False\">\r\n          <BehaviorTree id=\"0\" />\r\n          <ActionNode
+    id=\"2\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n  </editorInfo>\r\n 
+    <runtimeInfo>\r\n    <ActionNode id=\"12\" action=\"GameObject/FindTowers\">\r\n     
+    <inputParams>\r\n        <inputValues>\r\n          <entry name=\"name\" type=\"System.String\"
+    isBlackboard=\"True\" blackboard=\"name\" />\r\n          <entry name=\"AOETowers\"
+    type=\"System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]\" isBlackboard=\"True\"
+    blackboard=\"AOETowers\" />\r\n          <entry name=\"SingleTowers\" type=\"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]\"
+    isBlackboard=\"True\" blackboard=\"SingleTowers\" />\r\n        </inputValues>\r\n     
+    </inputParams>\r\n      <outputParams>\r\n        <outputValues>\r\n         
+    <entry name=\"MainTT\" type=\"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]\"
+    isBlackboard=\"True\" blackboard=\"MainTT\" />\r\n          <entry name=\"TowerType\"
+    type=\"System.String\" isBlackboard=\"True\" blackboard=\"TowerType\" />\r\n         
+    <entry name=\"AOETowers\" type=\"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]\"
+    isBlackboard=\"True\" blackboard=\"AOETowers\" />\r\n          <entry name=\"SingleTowers\"
+    type=\"System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]\" isBlackboard=\"True\"
+    blackboard=\"SingleTowers\" />\r\n        </outputValues>\r\n      </outputParams>\r\n     
+    <localParams />\r\n    </ActionNode>\r\n    <ActionNode id=\"14\" action=\"GameObject/SelectEnemies\">\r\n     
+    <inputParams>\r\n        <inputValues>\r\n          <entry name=\"TowerType\"
+    type=\"System.String\" isBlackboard=\"True\" blackboard=\"TowerType\" />\r\n         
+    <entry name=\"Tokens\" type=\"System.Int32\" isBlackboard=\"True\" blackboard=\"Tokens\"
+    />\r\n        </inputValues>\r\n      </inputParams>\r\n      <outputParams>\r\n       
+    <outputValues>\r\n          <entry name=\"Formation\" type=\"System.String\"
+    isBlackboard=\"True\" blackboard=\"Formation\" />\r\n          <entry name=\"TowerType\"
+    type=\"System.String\" isBlackboard=\"True\" blackboard=\"\" />\r\n         
+    <entry name=\"LargeEnemies\" type=\"System.Int32\" isBlackboard=\"True\" blackboard=\"LargeEnemies\"
+    />\r\n          <entry name=\"MedEnemies\" type=\"System.Int32\" isBlackboard=\"True\"
+    blackboard=\"MedEnemies\" />\r\n          <entry name=\"SmallEnemies\" type=\"System.Int32\"
+    isBlackboard=\"True\" blackboard=\"SmallEnemies\" />\r\n        </outputValues>\r\n     
+    </outputParams>\r\n      <localParams />\r\n    </ActionNode>\r\n    <ActionNode
+    id=\"16\" action=\"GameObject/SpawnEnemies\">\r\n      <inputParams>\r\n       
+    <inputValues>\r\n          <entry name=\"LargeEnemies\" type=\"System.Int32\"
+    isBlackboard=\"False\" value=\"0\" />\r\n          <entry name=\"MedEnemies\"
+    type=\"System.Int32\" isBlackboard=\"False\" value=\"0\" />\r\n          <entry
+    name=\"SmallEnemies\" type=\"System.Int32\" isBlackboard=\"False\" value=\"0\"
+    />\r\n          <entry name=\"LSpawn\" type=\"UnityEngine.GameObject\" isBlackboard=\"True\"
+    blackboard=\"LSpawn\" />\r\n          <entry name=\"MSpawn\" type=\"UnityEngine.GameObject\"
+    isBlackboard=\"True\" blackboard=\"MSpawn\" />\r\n          <entry name=\"SSpawn\"
+    type=\"UnityEngine.GameObject\" isBlackboard=\"True\" blackboard=\"SSpawn\" />\r\n         
+    <entry name=\"Formation\" type=\"System.String\" isBlackboard=\"True\" blackboard=\"Formation\"
+    />\r\n          <entry name=\"EnemyL\" type=\"UnityEngine.GameObject\" isBlackboard=\"True\"
+    blackboard=\"EnemyL\" />\r\n          <entry name=\"EnemyM\" type=\"UnityEngine.GameObject\"
+    isBlackboard=\"True\" blackboard=\"EnemyM\" />\r\n          <entry name=\"EnemyS\"
+    type=\"UnityEngine.GameObject\" isBlackboard=\"True\" blackboard=\"EnemyS\" />\r\n       
+    </inputValues>\r\n      </inputParams>\r\n      <outputParams />\r\n      <localParams
+    />\r\n    </ActionNode>\r\n    <RepeatDecorator id=\"24\" loops=\"-1\" policy=\"ContinueWhenChildFails\">\r\n     
+    <inputParams />\r\n      <outputParams />\r\n      <localParams />\r\n    </RepeatDecorator>\r\n   
+    <SequenceNode id=\"25\">\r\n      <children />\r\n      <inputParams />\r\n     
+    <outputParams />\r\n      <localParams />\r\n    </SequenceNode>\r\n  </runtimeInfo>\r\n 
+    <editorInfo>\r\n    <ActionNode id=\"12\">\r\n      <_data>\r\n        <data
+    breakpoint=\"0\" selected=\"False\" position=\"138.0757 463.0994\" name=\"GameObject/FindTowers\"
+    description=\"Finds the main towers\" cardinality=\"0\" hasParent=\"False\">\r\n         
+    <BehaviorTree id=\"12\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n   
+    <ActionNode id=\"14\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
+    position=\"319.9645 459.0994\" name=\"GameObject/SelectEnemies\" description=\"Finds
+    the main towers\" cardinality=\"0\" hasParent=\"False\">\r\n          <BehaviorTree
+    id=\"14\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n   
+    <ActionNode id=\"16\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
+    position=\"544.9641 464.0994\" name=\"GameObject/SpawnEnemies\" description=\"Finds
+    the main towers\" cardinality=\"0\" hasParent=\"False\">\r\n          <BehaviorTree
+    id=\"16\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n   
+    <RepeatDecorator id=\"24\">\r\n      <_data>\r\n        <data breakpoint=\"0\"
+    selected=\"False\" position=\"347.7778 172.2223\" name=\"Repeat\" description=\"Repeats
+    the execution of its child node\" cardinality=\"1\" hasParent=\"False\">\r\n         
+    <BehaviorTree id=\"0\" />\r\n          <RepeatDecorator id=\"24\" />\r\n       
+    </data>\r\n      </_data>\r\n    </RepeatDecorator>\r\n    <SequenceNode id=\"25\">\r\n     
+    <_data>\r\n        <data breakpoint=\"0\" selected=\"False\" position=\"347.7778
+    310\" name=\"Sequence\" description=\"Executes all its children in sequence until
+    all of them are successful\" cardinality=\"-1\" hasParent=\"False\">\r\n         
+    <BehaviorTree id=\"0\" />\r\n          <SequenceNode id=\"25\" />\r\n       
+    </data>\r\n      </_data>\r\n    </SequenceNode>\r\n  </editorInfo>\r\n  <runtimeInfo>\r\n   
+    <BehaviorTree id=\"12\" nextId=\"1\">\r\n      <inputParams />\r\n      <outputParams
+    />\r\n      <localParams />\r\n    </BehaviorTree>\r\n    <BehaviorTree id=\"14\"
+    nextId=\"1\">\r\n      <inputParams />\r\n      <outputParams />\r\n      <localParams
+    />\r\n    </BehaviorTree>\r\n    <BehaviorTree id=\"16\" nextId=\"1\">\r\n     
+    <inputParams />\r\n      <outputParams />\r\n      <localParams />\r\n    </BehaviorTree>\r\n 
+    </runtimeInfo>\r\n  <editorInfo>\r\n    <BehaviorTree id=\"12\" _removeIfClosed=\"False\">\r\n     
+    <_rootList />\r\n      <_nodes>\r\n        <nodes />\r\n      </_nodes>\r\n   
+    </BehaviorTree>\r\n    <BehaviorTree id=\"14\" _removeIfClosed=\"False\">\r\n     
+    <_rootList />\r\n      <_nodes>\r\n        <nodes />\r\n      </_nodes>\r\n   
+    </BehaviorTree>\r\n    <BehaviorTree id=\"16\" _removeIfClosed=\"False\">\r\n     
+    <_rootList />\r\n      <_nodes>\r\n        <nodes />\r\n      </_nodes>\r\n   
+    </BehaviorTree>\r\n  </editorInfo>\r\n</BehaviorBricks>"
+  zoom: 0.9
+  subslist:
+  - {fileID: 11400000, guid: 6c77abc6244c7604a93f480b49b233c5, type: 2}
+  _guid: f921e38e95acaec45939457d628ac5a7

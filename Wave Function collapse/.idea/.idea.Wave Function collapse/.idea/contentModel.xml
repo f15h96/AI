@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\fin\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\fin\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Wave Function collapse.-1494743693.00" t="ExcludeRecursive" />
+    <e p="D:\Masters\AI\TD game\Wave Function collapse" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Core" t="Include">
+            <e p="CoreHelper.cs" t="Include" />
+            <e p="CoreSolver.cs" t="Include" />
+            <e p="LowEntropyCell.cs" t="Include" />
+            <e p="OutputGrid.cs" t="Include" />
+            <e p="PropragationHelper.cs" t="Include" />
+            <e p="VectorPair.cs" t="Include" />
+            <e p="WFCCore.cs" t="Include" />
+          </e>
+          <e p="Direction.cs" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="WFCInspector.cs" t="Include" />
+          </e>
+          <e p="Input" t="Include">
+            <e p="HashCodeCalculator.cs" t="Include" />
+            <e p="IInputReader.cs" t="Include" />
+            <e p="InputImagePerameters.cs" t="Include" />
+            <e p="InputReader.cs" t="Include" />
+            <e p="IValue.cs" t="Include" />
+            <e p="MyCollectionExtension.cs" t="Include" />
+            <e p="TileBaseValue.cs" t="Include" />
+            <e p="TileContainer.cs" t="Include" />
+            <e p="ValuesManager.cs" t="Include" />
+          </e>
+          <e p="Output" t="Include">
+            <e p="IOutputCreator.cs" t="Include" />
+            <e p="TileMapOutput.cs" t="Include" />
+          </e>
+          <e p="Patterns" t="Include">
+            <e p="Pattern.cs" t="Include" />
+            <e p="PatternData.cs" t="Include" />
+            <e p="PatternDataResults.cs" t="Include" />
+            <e p="PatternFinder.cs" t="Include" />
+            <e p="PatternManager.cs" t="Include" />
+            <e p="PatternNeighbours.cs" t="Include" />
+            <e p="Stratergies" t="Include">
+              <e p="IFindNeighbourStrategy.cs" t="Include" />
+              <e p="NeighboursStrategySize1Default.cs" t="Include" />
+              <e p="NeighboursStrategySize2OrMore.cs" t="Include" />
+              <e p="NeighbourStrategyFactory.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Test.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Wave Function collapse.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
